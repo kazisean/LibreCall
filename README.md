@@ -1,8 +1,10 @@
-<h1><a href="https://call.hossain.cc"><img width="200" alt="LibreCall Logo" src="/doc/LibreCall.png"></a></h1>
+<h1><a href="https://call.hossain.cc"><img width="400" alt="LibreCall Logo" src="/doc/LibreCall.png"></a></h1>
 
 #### [Demo](https://call.hossain.cc) &nbsp; · &nbsp; [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](#Installation)
 
 Open-source, self-hosted platform for real-time video communication. 
+
+<img src="/doc/libre-banner.webp" alt="Anime style painting of looking over the skyline"/>
 
 ---
 
