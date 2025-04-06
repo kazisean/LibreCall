@@ -21,7 +21,6 @@ LibreCall enables self-hosted, instant, anonymous video calls through WebRTC, ac
 
 #### 🤖 Supported Platforms : 
 
-LibreCall works on:
 - Chrome, Firefox, Safari and other WebRTC-compatible browsers
 - Desktop and mobile devices
 - Any platform capable of running modern web browsers
@@ -92,8 +91,7 @@ Contributions are welcome! Whether you're fixing bugs, adding features, or impro
 
 - **Report bugs** by opening an issue
 - **Suggest features** that would make LibreCall more useful
-- **Submit pull requests** with code improvements
-- **Spread the word** about privacy-focused communication alternatives
+- **Submit pull requests** with code / implementation improvements
 
 -- TODO --
 - [ ] Implement multi-user call feature.
