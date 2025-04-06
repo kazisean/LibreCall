@@ -7,7 +7,7 @@ import { collection, doc, addDoc, getDoc, updateDoc, onSnapshot, setDoc } from '
 const servers = {
   iceServers: [
     {
-      urls: [import.meta.env.VITE_API_KEY, import.meta.env.VITE_API_KEY],
+      urls: [import.meta.env.VITE_STUN_SERVER_1, import.meta.env.VITE_STUN_SERVER_2],
     },
   ],
   iceCandidatePoolSize: 10,

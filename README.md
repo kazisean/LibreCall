@@ -17,6 +17,7 @@ LibreCall enables self-hosted, instant, anonymous video calls through WebRTC, ac
 - **Low Latency**: Smooth video conversations
 - **Self-Hostable**: Full control over your communication infrastructure
 - **Lightweight**: Minimal server requirements with most processing happening on clients
+- **1 on 1 Meeting**: Currently supports only 1 on 1 meeting with multi-user calls coming soon
 
 #### 🤖 Supported Platforms : 
 
@@ -27,7 +28,7 @@ LibreCall works on:
 
 ## 📚 Technical Architecture
 
-LibreCall leverages modern web technologies to deliver a lightweight yet powerful communication platform:
+LibreCall built on the following technologies to deliver a lightweight yet powerful communication platform:
 
 - **Frontend**: React with TypeScript.
 - **Build System**: Vite.
@@ -35,7 +36,6 @@ LibreCall leverages modern web technologies to deliver a lightweight yet powerfu
 - **Signaling**: Firebase Firestore for efficient connection establishment
 - **Deployment**: Static files that can be hosted anywhere
 
-The peer-to-peer architecture means most of the heavy lifting happens directly between clients, with Firestore simply facilitating the initial connection process.
 
 ## Installation 
 
@@ -96,8 +96,9 @@ Contributions are welcome! Whether you're fixing bugs, adding features, or impro
 - **Spread the word** about privacy-focused communication alternatives
 
 -- TODO --
-- [ ] Implement multi-user feature.
+- [ ] Implement multi-user call feature.
 - [ ] Implement end to end encryption.
+- [ ] Fix auto-disconnect of user when 3rd user join.
 
 ## License
 
