@@ -1,54 +1,104 @@
-# React + TypeScript + Vite
+<h1><a href="https://call.hossain.cc"><img width="200" alt="LibreCall Logo" src="/doc/LibreCall.png"></a></h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### [Demo](https://call.hossain.cc) &nbsp; · &nbsp; [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](##Installation)
 
-Currently, two official plugins are available:
+Open-source, self-hosted platform for real-time video communication. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## What is LibreCall?
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+LibreCall enables self-hosted, instant, anonymous video calls through WebRTC, achieving low latency calls without requiring user accounts or personal data. Perfect for teams and individuals who prioritize self-hosted and performance.
+
+#### Key Features
+
+- **Anonymous Communication**: No accounts, no tracking, just connect and communicate
+- **Low Latency**: Smooth video conversations
+- **Self-Hostable**: Full control over your communication infrastructure
+- **Lightweight**: Minimal server requirements with most processing happening on clients
+
+#### 🤖 Supported Platforms : 
+
+LibreCall works on:
+- Chrome, Firefox, Safari and other WebRTC-compatible browsers
+- Desktop and mobile devices
+- Any platform capable of running modern web browsers
+
+## 📚 Technical Architecture
+
+LibreCall leverages modern web technologies to deliver a lightweight yet powerful communication platform:
+
+- **Frontend**: React with TypeScript.
+- **Build System**: Vite.
+- **Communication**: WebRTC for direct audio/video streams
+- **Signaling**: Firebase Firestore for efficient connection establishment
+- **Deployment**: Static files that can be hosted anywhere
+
+The peer-to-peer architecture means most of the heavy lifting happens directly between clients, with Firestore simply facilitating the initial connection process.
+
+## Installation 
+
+Setting up your own LibreCall instance takes just a few minutes:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/kazisean/Libre-call.git
+   cd Libre-call
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Firebase**
+   - Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+   - Enable Firestore database in your project
+   - Set up the following data model:
+     - `calls` collection to store offer/answer objects
+     - Each call document contains `answerCandidates` and `offerCandidates` subcollections
+
+
+4. **Configure environment**
+   - Create a `.env` file with your Firebase credentials & your own stun server link:
+   ```
+   VITE_API_KEY=
+   VITE_AUTH_DOMAIN=
+   VITE_PROJECT_ID=
+   VITE_STORAGE_BUCKET=
+   VITE_MESSAGING_SENDER_ID=
+   VITE_APP_ID=
+   VITE_MEASUREMENT_ID=
+   VITE_STUN_SERVER_1 = 
+   VITE_STUN_SERVER_2 = 
+   ```
+
+5. **Build and deploy**
+   ```bash
+   npm run build
+   ```
+   - Deploy the contents of the `dist` directory to any static hosting provider
+
+To start the development server:
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📧 Contributing
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Contributions are welcome! Whether you're fixing bugs, adding features, or improving documentation, your help makes LibreCall better for everyone.
+
+- **Report bugs** by opening an issue
+- **Suggest features** that would make LibreCall more useful
+- **Submit pull requests** with code improvements
+- **Spread the word** about privacy-focused communication alternatives
+
+-- TODO --
+- [ ] Implement multi-user feature.
+- [ ] Implement end to end encryption.
+
+## License
+
+[MIT License]
