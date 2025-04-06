@@ -6,7 +6,6 @@ Open-source, self-hosted platform for real-time video communication.
 
 <img src="/doc/libre-banner.webp" alt="Anime style painting of looking over the skyline"/>
 
-
 ---
 
 
