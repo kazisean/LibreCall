@@ -4,6 +4,9 @@
 
 Open-source, self-hosted platform for real-time video communication. 
 
+<img src="/doc/libre-banner.webp" alt="Anime style painting of looking over the skyline"/>
+
+
 ---
 
 
@@ -99,6 +102,7 @@ Contributions are welcome! Whether you're fixing bugs, adding features, or impro
 - [ ] Implement multi-user call feature.
 - [ ] Implement end to end encryption.
 - [ ] Fix auto-disconnect of user when 3rd user join.
+- [ ] Implement screen sharing feature
 
 ## License
 
