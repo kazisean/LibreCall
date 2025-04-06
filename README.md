@@ -1,6 +1,6 @@
 <h1><a href="https://call.hossain.cc"><img width="200" alt="LibreCall Logo" src="/doc/LibreCall.png"></a></h1>
 
-#### [Demo](https://call.hossain.cc) &nbsp; · &nbsp; [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](##Installation)
+#### [Demo](https://call.hossain.cc) &nbsp; · &nbsp; [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](#Installation)
 
 Open-source, self-hosted platform for real-time video communication. 
 
