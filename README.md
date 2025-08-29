@@ -100,7 +100,9 @@ Contributions are welcome! Whether you're fixing bugs, adding features, or impro
 - [ ] Implement screen sharing feature
 
 ## Demo
-https://github.com/kazisean/website/raw/refs/heads/main/static/videos/libre-call-demo.mp4
+<video controls playsinline width="600">
+   <source src="https://github.com/kazisean/website/raw/refs/heads/main/static/videos/libre-call-demo.mp4" type="video/mp4">
+</video>
 
 ## License
 
