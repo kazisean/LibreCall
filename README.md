@@ -1,6 +1,6 @@
 <h1><a href="https://call.hossain.cc"><img width="400" alt="LibreCall Logo" src="/doc/LibreCall.png"></a></h1>
 
-#### [Demo Video](#demo) &nbsp; · &nbsp; [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](#Installation)
+#### [Demo Video](https://hossain.cc/libre-demo) &nbsp; · &nbsp; [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](#Installation)
 
 Open-source, self-hosted platform for real-time video communication. 
 
@@ -98,11 +98,6 @@ Contributions are welcome! Whether you're fixing bugs, adding features, or impro
 - [ ] Implement end to end encryption.
 - [ ] Fix auto-disconnect of user when 3rd user join.
 - [ ] Implement screen sharing feature
-
-## Demo
-<video controls playsinline width="600">
-   <source src="https://github.com/kazisean/website/raw/refs/heads/main/static/videos/libre-call-demo.mp4" type="video/mp4">
-</video>
 
 ## License
 
