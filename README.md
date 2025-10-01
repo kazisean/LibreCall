@@ -93,12 +93,6 @@ Contributions are welcome! Whether you're fixing bugs, adding features, or impro
 - **Suggest features** that would make LibreCall more useful
 - **Submit pull requests** with code / implementation improvements
 
--- TODO --
-- [ ] Implement multi-user call feature.
-- [ ] Implement end to end encryption.
-- [ ] Fix auto-disconnect of user when 3rd user join.
-- [ ] Implement screen sharing feature
-
 ## License
 
 [MIT License]
