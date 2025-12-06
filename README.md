@@ -1,6 +1,6 @@
 <h1><a href="https://call.hossain.cc"><img width="400" alt="LibreCall Logo" src="/doc/LibreCall.png"></a></h1>
 
-#### [Demo Video](https://hossain.cc/libre-demo) &nbsp; · &nbsp; [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](#Installation)
+#### [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation] (#Installation)
 
 Open-source, self-hosted platform for real-time video communication. 
 
@@ -9,7 +9,7 @@ Open-source, self-hosted platform for real-time video communication.
 
 ## What is LibreCall?
 
-LibreCall enables self-hosted, instant, anonymous video calls through WebRTC, achieving low latency calls without requiring user accounts or personal data. Perfect for teams and individuals who prioritize self-hosted and performance.
+LibreCall enables self-hosted, instant, anonymous Peer-to-peer (P2P) video calls through WebRTC, achieving low latency calls without requiring user accounts or personal data. Perfect for individuals who prioritize privacy, self-hosting capabilities, and performance.
 
 #### Key Features
 
@@ -17,23 +17,7 @@ LibreCall enables self-hosted, instant, anonymous video calls through WebRTC, ac
 - **Low Latency**: Smooth video conversations
 - **Self-Hostable**: Full control over your communication infrastructure
 - **Lightweight**: Minimal server requirements with most processing happening on clients
-- **1 on 1 Meeting**: Currently supports only 1 on 1 meeting with multi-user calls coming soon
-
-#### 🤖 Supported Platforms : 
-
-- Chrome, Firefox, Safari and other WebRTC-compatible browsers
-- Desktop and mobile devices
-- Any platform capable of running modern web browsers
-
-## 📚 Technical Architecture
-
-LibreCall built on the following technologies to deliver a lightweight yet powerful communication platform:
-
-- **Frontend**: React with TypeScript.
-- **Build System**: Vite.
-- **Communication**: WebRTC for direct audio/video streams
-- **Signaling**: Firebase Firestore for efficient connection establishment
-- **Deployment**: Static files that can be hosted anywhere
+- **1-on-1 Meetings**: Currently supports only 1 on 1 meeting with multi-user calls coming soon
 
 
 ## Installation 
@@ -69,7 +53,7 @@ Setting up your own LibreCall instance takes just a few minutes:
    VITE_MESSAGING_SENDER_ID=
    VITE_APP_ID=
    VITE_MEASUREMENT_ID=
-   VITE_STUN_SERVER_1 = 
+   VITE_STUN_SERVER_1 = (you can host your own STUN servers or use Google’s public ones (less secure))
    VITE_STUN_SERVER_2 = 
    ```
 
@@ -84,6 +68,15 @@ To start the development server:
 npm run dev
 ```
 
+## Architecture
+
+LibreCall is built on the following technologies to deliver a lightweight yet powerful communication platform:
+
+- **Frontend**: React with TypeScript
+- **Build System**: Vite
+- **Communication**: WebRTC for direct audio/video streams
+- **Signaling**: Firebase Firestore to exchange SDP and ICE candidates
+- **Deployment**: Static files that can be hosted anywhere
 
 ## 📧 Contributing
 
