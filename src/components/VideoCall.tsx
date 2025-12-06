@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { db } from '@/lib/firebase';
+import { db, auth } from '@/lib/firebase';
 import { collection, doc, addDoc, getDoc, updateDoc, onSnapshot, setDoc } from 'firebase/firestore';
+import { signInAnonymously } from 'firebase/auth';
 
 const servers = {
   iceServers: [
@@ -48,6 +49,9 @@ export function VideoCall() {
       console.log("Initializing WebRTC");
       
       try {
+        // Sign in anonymously first
+        await signInAnonymously(auth);
+
         // Create a new RTCPeerConnection here instead of at component initialization
         const peerConnection = new RTCPeerConnection(servers);
         pcRef.current = peerConnection;

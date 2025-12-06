@@ -33,6 +33,7 @@ Setting up your own LibreCall instance takes just a few minutes:
 2. **Install dependencies**
    ```bash
    npm install
+   npm run dev
    ```
 
 3. **Set up Firebase**
