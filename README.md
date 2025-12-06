@@ -1,6 +1,6 @@
 <h1><a href="https://call.hossain.cc"><img width="400" alt="LibreCall Logo" src="/doc/LibreCall.png"></a></h1>
 
-#### [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](#Installation)
+#### [Report a bug](https://github.com/kazisean/Libre-call/issues/new) &nbsp; · &nbsp; [Installation](#installation)
 
 Open-source, self-hosted platform for real-time video communication. 
 
@@ -20,7 +20,7 @@ LibreCall enables self-hosted, instant, anonymous Peer-to-peer (P2P) video calls
 - **1-on-1 Meetings**: Currently supports only 1 on 1 meeting with multi-user calls coming soon
 
 
-## Installation 
+## Installation
 
 Setting up your own LibreCall instance takes just a few minutes:
 
